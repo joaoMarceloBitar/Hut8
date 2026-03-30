@@ -1,0 +1,33 @@
+:root {
+
+    /*Cores principais*/
+    --color-primary: #6B0F9C;
+    --color-secondary: #A4DE02;
+
+    /*Neutros*/
+    --color-gray-900: #1F2937;
+    --color-gray-600: #4B5563;
+    --color-background: #F9FAFB;
+
+    /*Borda*/
+    --border-color: #E5E7EB;
+
+    /*Tamanhos de fonte*/
+    --font-size-xl: 3.75rem;
+    --font-size-lg: 2.25rem;
+    --font-size-md: 1.25rem;
+    --font-size-sm: 1rem;
+    --font-size-xm: 0.87rem;
+
+    /*Pesos de fonte*/
+    --weight-Extra-Bold: 800;
+    --weight-Bold: 700;
+    --weight-Medium: 500;
+    --weight-Regular: 400;
+
+    /*Espaçamento*/
+    --spacing-xl: 4rem;
+    --spacing-md: 3rem;
+    --spacing-sm: 2rem;
+
+}

@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './paginas/Home/Home'
+import Equipe from './paginas/Equipe/Equipe'
 
 function App() {
 
