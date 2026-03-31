@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import  Footer  from './components/layout/Footer/Footer'
 import Home from './paginas/Home/Home'
 import Equipe from './paginas/Equipe/Equipe'
 
@@ -12,6 +13,7 @@ function App() {
             <Route path='/projetos' element={<></>}/>
             <Route path='/equipe' element={<></>}/>
         </Routes>
+        <Footer />
       </BrowserRouter>
    </>
   )
