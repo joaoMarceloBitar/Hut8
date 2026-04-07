@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    background-color: #F8F7FA;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+    background-color: rgba(164, 222, 2, 0.75);
+}
+
+.overlayborder {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(107, 15, 156, 0.1);
+    border: 1px solid rgba(107, 15, 156, 0.2);
+    border-radius: 9999px;
+    padding: 0.5rem 1rem;
+}
+
+.tittle h1 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #111827;
+    line-height: 1;
+    margin: 0;
+}
+
+.tittle span {
+    color: #6B0F9C;
+}
+
+.text {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #4B5563;
+    line-height: 1.5;
+    margin: 0;
+}
