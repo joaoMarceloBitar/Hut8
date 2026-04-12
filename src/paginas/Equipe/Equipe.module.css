@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.1rem 0.6rem;
+    max-width: 16rem;
+    color: var(--color-primary); 
+    background-color:#6B0F9C20; 
+    border: solid 1px;
+    border-radius: 24px;
+    border-color: var(--color-primary);
+    background: rgba(107, 15, 156, 0.1);
+    border: 1px solid rgba(107, 15, 156, 0.2);
+    border-radius: 9999px;
+}
+
+.tag p{
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+.bola{
+    background-color: var(--color-secondary);
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+}
+.texto {
+    max-width: 45%;
+}
+
+.imagem_1 {
+    max-width: 43rem;
+    border-radius: 30px;
+}
+
