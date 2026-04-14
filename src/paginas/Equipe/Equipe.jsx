@@ -1,4 +1,7 @@
 import styles from './Equipe.module.css'
+import CardProfessor from '../../components/layout/CardProfessores/'
+import professores from './professoresData'
+
 function Equipe() {
 
     return (
