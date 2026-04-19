@@ -1,33 +1,51 @@
 import styles from './ProjectsSection.module.css'
-import ProjectsCard from './ProjectsCard.jsx'
+import ProjectCardDark from './ProjectCardDark.jsx'
+import ProjectCardLight from './ProjectCardLight.jsx'
+import ProjectCardSide from './ProjectCardSide.jsx'
 
 function ProjectsSection() {
     return (
         <section className={styles.section}>
             <div className={styles.grid}>
-                <ProjectsCard
+                <ProjectCardDark
                     title="Toni Neutzling"
-                    description="Redefinindo a experiência de busca..."
+                    description="Redefinindo a experiência de busca por imóveis..."
                     image="/projectcard1.png"
-                    variant="dark"
+                    gradient="linear-gradient(0deg, rgba(14, 14, 18, 0.9) 0%, rgba(14, 14, 18, 0.4) 50%, rgba(14, 14, 18, 0) 100%)"
+                    badges={[
+                        { label: "Imobiliária", primary: true },
+                        { label: "React Native", primary: false },
+                        { label: "PostgreSQL", primary: false }
+                    ]}
+                    metric="+150%"
+                    metricLabel="Leads mensais"
+                    buttonText="Ver Caso"
                 />
-                <ProjectsCard
+                <ProjectCardDark
                     title="Plante Saúde"
-                    description="Monitoramento preditivo de safras..."
+                    description="Monitoramento preditivo de safras através de análise foliar via IA."
                     image="/projectcard2.png"
-                    variant="dark"
+                    gradient="linear-gradient(0deg, rgba(129, 59, 190, 0.9) 0%, rgba(129, 59, 190, 0.4) 50%, rgba(129, 59, 190, 0) 100%)"
+                    badges={[
+                        { label: "Agrotech", primary: true }
+                    ]}
+                    metric="50%"
+                    metricLabel="Aumento na eficiência"
+                    buttonText={null}
                 />
-                <ProjectsCard
+                <ProjectCardLight
                     title="Pastejando"
+                    category="Gestão Rural"
                     description="Otimização de rotatividade de pasto..."
                     image="/projectcard3.png"
-                    variant="light"
+                    tags={["Flutter", "Firebase", "IoT"]}
                 />
-                <ProjectsCard
+                <ProjectCardSide
                     title="Hut Admin"
                     description="Dashboard centralizado para gerenciamento..."
                     image="/projectcard4.png"
-                    variant="light"
+                    tags={["React", "Node.js", "PostgreSQL"]}
+                    category="Gestão"
                 />
             </div>
         </section>
