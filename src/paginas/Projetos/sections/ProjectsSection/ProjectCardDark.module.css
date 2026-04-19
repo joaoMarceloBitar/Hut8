@@ -1,15 +1,63 @@
 .card {
-    border-radius: 1.5rem;
-    height: 31rem;
-    padding: 2rem;
+    position: relative;
+    height: 500px;
+    background: #F5F2F9;
+    border: 1px solid rgba(178, 177, 186, 0.1);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    overflow: hidden;
     background-size: cover;
     background-position: center;
+}
+
+.cardGradient {
+    position: absolute;
+    inset: 0;
+}
+
+.badges {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    right: 32px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    /* empurra o conteúdo pra baixo */
-    position: relative;
-    overflow: hidden;
+    gap: 8px;
+    z-index: 2;
+}
+
+.title {
+    position: absolute;
+    top: 72px;
+    left: 32px;
+    right: 32px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color: white;
+    z-index: 2;
+}
+
+.description {
+    position: absolute;
+    top: 116px;
+    left: 32px;
+    max-width: 512px;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 2;
+}
+
+.footer {
+    position: absolute;
+    top: 192px;
+    left: 32px;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
 }
 
 .card::before {
@@ -20,25 +68,17 @@
     border-radius: 1.5rem;
 }
 
+
 .content {
-    position: relative;
-    z-index: 1;
-    color: white;
-}
-
-.cardGradient {
     position: absolute;
-    inset: 0;
-    border-radius: 1.5rem;
-}
-
-.badges {
-    position: absolute;
-    top: 2rem;
+    bottom: 2rem;
     left: 2rem;
+    right: 2rem;
+    z-index: 2;
+    color: white;
     display: flex;
-    gap: 0.5rem;
-    z-index: 1;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
 .badgePrimary {
@@ -62,12 +102,7 @@
     border-radius: 9999px;
 }
 
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
-}
+
 
 .metric {
     display: flex;
@@ -98,4 +133,35 @@
     font-size: 1rem;
     font-weight: 700;
     text-decoration: none;
+}
+
+.resultText {
+    color: #CAFF6F;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.content h3 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: white;
+}
+
+.content p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+
+.arrowButton {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #CAFF6F;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #344E00;
+    font-weight: 700;
 }

@@ -23,15 +23,12 @@ function ProjectsSection() {
                 />
                 <ProjectCardDark
                     title="Plante Saúde"
-                    description="Monitoramento preditivo de safras através de análise foliar via IA."
+                    description="Monitoramento preditivo de safras..."
                     image="/projectcard2.png"
-                    gradient="linear-gradient(0deg, rgba(129, 59, 190, 0.9) 0%, rgba(129, 59, 190, 0.4) 50%, rgba(129, 59, 190, 0) 100%)"
-                    badges={[
-                        { label: "Agrotech", primary: true }
-                    ]}
-                    metric="50%"
-                    metricLabel="Aumento na eficiência"
-                    buttonText={null}
+                    gradient="linear-gradient(0deg, rgba(129, 59, 190, 0.85) 0%, rgba(129, 59, 190, 0.1) 30%, rgba(129, 59, 190, 0) 100%)"
+                    badges={[{ label: "Agrotech", primary: true }]}
+                    resultText="Aumento de 50% na eficiência"
+                    arrowButton={true}
                 />
                 <ProjectCardLight
                     title="Pastejando"
