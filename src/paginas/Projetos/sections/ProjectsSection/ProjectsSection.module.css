@@ -1,0 +1,11 @@
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* 2 colunas: a primeira é maior que a segunda */
+    gap: 1.5rem;
+    /* espaço entre os cards */
+}
+
+.section {
+    padding: 5rem 10%;
+}
