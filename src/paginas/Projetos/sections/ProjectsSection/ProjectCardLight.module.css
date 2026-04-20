@@ -1,52 +1,89 @@
 .card {
-    background-color: #fff;
-    border-radius: 1.5rem;
+    background-color: #FFFFFF;
+    border-radius: 24px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(178, 177, 186, 0.2);
-    box-shadow: 0 0.625rem 0.9375rem -0.1875rem rgba(0, 0, 0, 0.1);
-}
-
-.content {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+    height: 494px;
 }
 
 .image {
     width: 100%;
-    height: 20rem;
+    height: 256px;
     object-fit: cover;
-    border-radius: 1rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 16px;
+    flex-grow: 1;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
-.header h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
+.titleWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
-.header span {
-    font-size: 1rem;
-    font-weight: 500;
+.title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #323239;
+    margin: 0;
+}
+
+.category {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #5F5E67;
+}
+
+.iconWrapper {
+    color: #813BBE;
+    width: 27.5px;
+    height: 21.5px;
+}
+
+.description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #5F5E67;
+    margin: 0;
+    white-space: pre-line;
 }
 
 .tags {
     display: flex;
-    gap: 0.5rem;
+    flex-direction: row;
+    padding: 8px 0px 0px;
+    gap: 8px;
 }
 
 .tag {
-    background-color: #f5f5f5;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    font-size: 0.875rem;
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #5F5E67;
+    background: #E9E7F0;
+    border-radius: 6px;
+    padding: 4px 8px;
 }
