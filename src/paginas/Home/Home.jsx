@@ -105,40 +105,104 @@ function Home() {
             </div>
         </section>
         
-        <section>
-            <h2>O Que Fazemos</h2>
-                <br/>
-                <h1>
-                Soluções Digitais Completas
-                </h1>
-                <br></br>
-                <h3>Temos a solução e as ferramentas perfeitas a sua necessidade, do conceito ao código.</h3>
-                <section style={{ padding: "40px" }}>
-                    <h2>Soluções Digitais</h2>
+        
+        <section className="services">
+        <span className="services-label">O Que Fazemos</span>
+        <h1 className="services-title">Soluções Digitais Completas</h1>
+        <p className="services-subtitle">
+          Temos a solução e as ferramentas perfeitas a sua necessidade, do conceito ao código.
+        </p>
 
-                    <div style={{ display: "flex", gap: "20px" }}>
+        <div className="services-cards">
+          <div className="service-card">
+            <div className="service-card-icon icon-purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <path d="M8 21h8M12 17v4"/>
+              </svg>
+            </div>
+            <h3>Plataformas Web</h3>
+            <p>Sites institucionais, e-commerces e sistemas web robustos. Levamos seu negócio para a internet com tecnologia de ponta.</p>
+            <Link to="#">Saiba mais →</Link>
+          </div>
 
-                        <div style={{ border: "1px solid #ccc", padding: "20px" }}>
-                        <h3>Plataformas Web</h3>
-                        <p>Sites e sistemas web.</p>
-                        <p>Saiba mais</p>
-                        </div>
+          <div className="service-card">
+            <div className="service-card-icon icon-green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <rect x="5" y="2" width="14" height="20" rx="2"/>
+                <path d="M12 18h.01"/>
+              </svg>
+            </div>
+            <h3>Aplicativos Mobile</h3>
+            <p>Esteja sempre perto de seus clientes. Desenvolvimento de aplicativos nativos e híbridos para iOS e Android.</p>
+            <Link to="#">Saiba mais →</Link>
+          </div>
 
-                        <div style={{ border: "1px solid #ccc", padding: "20px" }}>
-                        <h3>Aplicativos Mobile</h3>
-                        <p>Apps para Android e iOS.</p>
-                        <p>Saiba mais</p>
-                        </div>
+          <div className="service-card">
+            <div className="service-card-icon icon-purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <h3>Soluções Personalizadas</h3>
+            <p>Tem uma ideia inovadora? Transformamos sua visão em software funcional com consultoria especializada.</p>
+            <Link to="#">Saiba mais →</Link>
+          </div>
+        </div>
+      </section>
 
-                        <div style={{ border: "1px solid #ccc", padding: "20px" }}>
-                        <h3>Soluções Personalizadas</h3>
-                        <p>Software sob medida.</p>
-                        <p>Saiba mais</p>
-                        </div>
-
-                    </div>
-                </section>
+      <section className="cta">
+        <div className="cta-container">
+            <div className="cta-text">
+                <h2>Pronto para tirar sua ideia do papel?</h2>
+                <p>
+                     Nossa equipe está pronta para desenvolver a solução perfeita para o seu negócio.
+                </p>
+            </div>
+            <button className="cta-button">Solicitar Orçamento</button>
+        </div>
         </section>
+
+        <footer className="footer">
+  <div className="footer-container">
+
+    <div className="footer-brand">
+      <h3>Hut8</h3>
+      <p>
+        Empresa Júnior de Computação da UFPel. Inovação e tecnologia ao alcance do seu negócio.
+      </p>
+    </div>
+
+    <div className="footer-links">
+      <h4>Links Rápidos</h4>
+      <p>Home</p>
+      <p>Sobre Nós</p>
+      <p>Projetos</p>
+      <p>Equipe</p>
+    </div>
+
+    <div className="footer-links">
+      <h4>Serviços</h4>
+      <p>Desenvolvimento Web</p>
+      <p>Aplicativos Mobile</p>
+      <p>Consultoria em TI</p>
+      <p>Sistemas Personalizados</p>
+    </div>
+
+    <div className="footer-links">
+      <h4>Contato</h4>
+      <p>Pelotas - RS</p>
+      <p>hut8@inf.ufpel.edu.br</p>
+      <p>(53) 99999-9999</p>
+    </div>
+
+  </div>
+
+  <div className="footer-bottom">
+    <p>© 2025 Hut8. Todos os direitos reservados.</p>
+  </div>
+</footer>
     </>
   );
 }
