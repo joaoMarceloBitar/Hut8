@@ -7,3 +7,19 @@
 body {
   font-family: 'Inter', sans-serif;
 }
+
+:root {
+  --color-primary: #6B0F9C;
+  --color-secondary: #A4DE02;
+  --color-gray-900: #1F2937;
+  --color-gray-600: #4B5563;
+  --color-background: #ffffff;
+  --border-color: #E5E7EB;
+
+  --font-size-lg: 32px;
+  --font-size-md: 18px;
+  --font-size-sm: 14px;
+
+  --weight-Bold: 600;
+  --weight-Extra-Bold: 800;
+}
