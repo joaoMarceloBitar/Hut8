@@ -1,4 +1,4 @@
-function Equipe(){
+function Equipe() {
 
 
 }

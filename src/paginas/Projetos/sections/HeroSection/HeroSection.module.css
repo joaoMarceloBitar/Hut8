@@ -1,0 +1,294 @@
+.hero {
+    position: relative;
+    padding: 74px 0 120px;
+    background-color: #F9FAFB;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1370px;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Blurs de fundo da seção (Overlay+Blur do Figma) */
+.backgroundBlurPurple {
+    position: absolute;
+    width: 384px;
+    height: 384px;
+    right: -80px;
+    top: -80px;
+    background: rgba(107, 15, 156, 0.1);
+    filter: blur(32px);
+    border-radius: 9999px;
+    z-index: 0;
+}
+
+.backgroundBlurGreen {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    left: -80px;
+    bottom: -80px;
+    background: rgba(164, 222, 2, 0.1);
+    filter: blur(32px);
+    border-radius: 9999px;
+    z-index: 0;
+}
+
+/* Badge (Overlay+Border) */
+.overlayBorder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 12px;
+    gap: 8px;
+    width: fit-content;
+    height: 30px;
+    background: rgba(107, 15, 156, 0.1);
+    border: 1px solid rgba(107, 15, 156, 0.2);
+    border-radius: 9999px;
+    margin-bottom: 24px;
+}
+
+.dotContainer {
+    position: relative;
+    width: 8px;
+    height: 8px;
+}
+
+.dotBackground {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #A4DE02;
+    opacity: 0.75;
+    border-radius: 9999px;
+    z-index: 0;
+}
+
+.dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #A4DE02;
+    border-radius: 9999px;
+    z-index: 1;
+}
+
+.badgeText {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B0F9C;
+}
+
+/* Texto Principal */
+.content {
+    flex: 1;
+    max-width: 660px;
+}
+
+.title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -1.8px;
+    color: #323239;
+    margin-bottom: 24px;
+}
+
+.title span {
+    color: #6B0F9C;
+}
+
+.description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #5F5E67;
+    max-width: 672px;
+}
+
+/* Lado Visual (Laptop) */
+.visual {
+    position: relative;
+    width: 660px;
+    min-width: 660px;
+    height: 584px;
+}
+
+/* Blobs atrás do laptop (Background+Blur do Figma) */
+.blobTop {
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    right: -40px;
+    top: 40px;
+    background: #A4DE02;
+    opacity: 0.2;
+    filter: blur(12px);
+    border-radius: 9999px;
+    z-index: 0;
+}
+
+.blobBottom {
+    position: absolute;
+    width: 212px;
+    height: 212px;
+    left: -124px;
+    bottom: -124px;
+    background: #8CC540;
+    opacity: 0.2;
+    filter: blur(12px);
+    border-radius: 9999px;
+    z-index: 1;
+}
+
+/* Background+Border+Shadow (o container da imagem) */
+.imageWrapper {
+    position: relative;
+    width: 660px;
+    height: 584px;
+    background: #1F2937;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.mainImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Card de Código (Background+Border+OverlayBlur) */
+.floatingCode {
+    position: absolute;
+    left: 25px;
+    right: 24.5px;
+    bottom: 25px;
+    padding: 16px 16px 17px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #E5E7EB;
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+}
+
+.codeControls {
+    display: flex;
+    gap: 8px;
+}
+
+.control {
+    width: 12px;
+    height: 12px;
+    border-radius: 9999px;
+}
+
+.red {
+    background: #EF4444;
+}
+
+.yellow {
+    background: #EAB308;
+}
+
+.green {
+    background: #22C55E;
+}
+
+.codeBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.codeLine {
+    font-family: 'Menlo', monospace;
+    font-weight: 400;
+    font-size: 11.8px;
+    line-height: 16px;
+    color: #4B5563;
+}
+
+.purpleText {
+    color: #6B0F9C;
+}
+
+.greenText {
+    color: #A4DE02;
+}
+
+/* Responsividade */
+@media (max-width: 1280px) {
+    .visual {
+        width: 100%;
+        min-width: unset;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .imageWrapper {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 660 / 584;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: 3.5rem;
+        line-height: 1.1;
+    }
+
+    .visual {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 80px 1.5rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .floatingCode {
+        display: none;
+    }
+}
