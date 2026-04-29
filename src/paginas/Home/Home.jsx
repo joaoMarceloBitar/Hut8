@@ -13,100 +13,100 @@ import "../../styles/home.css";
 function Home() {
   return (
     <>
-        <section className="hero">
-            <div className="hero-text">
-                <h1>
-                    Empresa Júnior de <br />
-                    <span>Computação - UFPel</span>
-                </h1>
-                <p>
-                   Desenvolvemos soluções tecnológicas personalizadas e inovadoras por um melhor custo-benefício, aproximando jovens universitários do mercado de trabalho.
-                </p>
-                <div className="hero-buttons">
-                    <button>Entre para a Hut8</button>
-                    <button>Ver Portfólio</button>
+      <section className="hero">
+        <div className="hero-text">
+          <h1>
+            Empresa Júnior de <br />
+            <span>Computação - UFPel</span>
+          </h1>
+          <p>
+            Desenvolvemos soluções tecnológicas personalizadas e inovadoras por um melhor custo-benefício, aproximando jovens universitários do mercado de trabalho.
+          </p>
+          <div className="hero-buttons">
+            <button>Entre para a Hut8</button>
+            <button>Ver Portfólio</button>
+          </div>
+        </div>
+        <div className="hero-img">
+          <img src={heroImg} alt="Equipe trabalhando" />
+        </div>
+      </section>
+
+      <section className="stats">
+        <div className="stat-item">
+          <h2>10+</h2>
+          <p>Anos de História</p>
+        </div>
+        <div className="stat-item">
+          <h2>50+</h2>
+          <p>Projetos entregues</p>
+        </div>
+        <div className="stat-item">
+          <h2>100+</h2>
+          <p>Membros Impactados</p>
+        </div>
+        <div className="stat-item">
+          <h2>100%</h2>
+          <p>Clientes Satisfeitos</p>
+        </div>
+      </section>
+
+      <section className="about">
+        <div className="about-container">
+          <div className="about-image">
+            <img src={Team_meeting} alt="Team meeting" />
+            <div className="image-overlay">
+              <div className="inner-circle">
+                <img src={school} alt="school" />
+              </div>
+            </div>
+            <img src={image_2} alt="image_2" />
+          </div>
+          <div className="about-text">
+            <h2 className="about-title">Quem somos</h2>
+
+            <h1 className="about-titleH1">
+              Trazemos o mercado de trabalho para dentro do meio acadêmico
+            </h1>
+
+            <p>
+              Fundada em maio de 2014, a Hut8 é a empresa júnior dos cursos de Ciência
+              e Engenharia da Computação, vinculada à Universidade Federal de Pelotas.
+              <br /><br />
+              Sem fins lucrativos, somos constituídos por uma equipe de jovens
+              universitários que buscam obter conhecimento e experiência de mercado
+              além das grades curriculares.
+            </p>
+
+            <div className="about-features">
+              <div className="feature-item">
+                <div className="overlay">
+                  <img src={check_circle} alt="check" />
                 </div>
-            </div>
-            <div className="hero-img">
-                <img src={heroImg} alt="Equipe trabalhando" />
-            </div>
-        </section>
 
-        <section className="stats">
-            <div className="stat-item">
-                <h2>10+</h2>
-                <p>Anos de História</p>
-            </div>
-            <div className="stat-item">
-                <h2>50+</h2>
-                <p>Projetos entregues</p>
-            </div>
-            <div className="stat-item">
-                <h2>100+</h2>
-                <p>Membros Impactados</p>
-            </div>
-            <div className="stat-item">
-                <h2>100%</h2>
-                <p>Clientes Satisfeitos</p>
-            </div>
-        </section>
-
-        <section className="about">
-            <div className="about-container">
-                <div className="about-image">
-                    <img src={Team_meeting} alt="Team meeting" />
-                    <div className="image-overlay">
-                        <div className="inner-circle">
-                            <img src={school} alt="school" />
-                        </div>
-                    </div>
-                    <img src={image_2} alt="image_2" />
+                <div>
+                  <h2>Qualidade Garantida</h2>
+                  <p>Processos supervisionados por professores doutores da UFPel.</p>
                 </div>
-                <div className="about-text">
-                    <h2 className="about-title">Quem somos</h2>
+              </div>
 
-                    <h1 className="about-titleH1">
-                        Trazemos o mercado de trabalho para dentro do meio acadêmico
-                    </h1>
-
-                    <p>
-                        Fundada em maio de 2014, a Hut8 é a empresa júnior dos cursos de Ciência 
-                        e Engenharia da Computação, vinculada à Universidade Federal de Pelotas.
-                        <br /><br />
-                        Sem fins lucrativos, somos constituídos por uma equipe de jovens 
-                        universitários que buscam obter conhecimento e experiência de mercado 
-                        além das grades curriculares.
-                    </p>
-
-                    <div className="about-features">
-                        <div className="feature-item">
-                            <div className="overlay">
-                            <img src={check_circle} alt="check" />
-                            </div>
-
-                            <div>
-                            <h2>Qualidade Garantida</h2>
-                            <p>Processos supervisionados por professores doutores da UFPel.</p>
-                            </div>
-                        </div>
-
-                        <div className="feature-item">
-                            <div className="overlay">
-                            <img src={monetization_on} alt="monetization" />
-                            </div>
-
-                            <div>
-                            <h2>Custo-Benefício</h2>
-                            <p>Valores acessíveis e investimento no futuro da tecnologia.</p>
-                            </div>
-                        </div>
-                    </div>
+              <div className="feature-item">
+                <div className="overlay">
+                  <img src={monetization_on} alt="monetization" />
                 </div>
+
+                <div>
+                  <h2>Custo-Benefício</h2>
+                  <p>Valores acessíveis e investimento no futuro da tecnologia.</p>
+                </div>
+              </div>
             </div>
-        </section>
-        
-        
-        <section className="services">
+          </div>
+        </div>
+      </section>
+
+
+      <section className="services">
         <span className="services-label">O Que Fazemos</span>
         <h1 className="services-title">Soluções Digitais Completas</h1>
         <p className="services-subtitle">
@@ -117,8 +117,8 @@ function Home() {
           <div className="service-card">
             <div className="service-card-icon icon-purple">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <rect x="2" y="3" width="20" height="14" rx="2"/>
-                <path d="M8 21h8M12 17v4"/>
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <path d="M8 21h8M12 17v4" />
               </svg>
             </div>
             <h3>Plataformas Web</h3>
@@ -129,8 +129,8 @@ function Home() {
           <div className="service-card">
             <div className="service-card-icon icon-green">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <rect x="5" y="2" width="14" height="20" rx="2"/>
-                <path d="M12 18h.01"/>
+                <rect x="5" y="2" width="14" height="20" rx="2" />
+                <path d="M12 18h.01" />
               </svg>
             </div>
             <h3>Aplicativos Mobile</h3>
@@ -141,8 +141,8 @@ function Home() {
           <div className="service-card">
             <div className="service-card-icon icon-purple">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <polyline points="16 18 22 12 16 6"/>
-                <polyline points="8 6 2 12 8 18"/>
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
               </svg>
             </div>
             <h3>Soluções Personalizadas</h3>
@@ -154,13 +154,13 @@ function Home() {
 
       <section className="cta">
         <div className="cta-container">
-            <div className="cta-text">
-                <h2>Pronto para tirar sua ideia do papel?</h2>
-                <p>
-                     Nossa equipe está pronta para desenvolver a solução perfeita para o seu negócio.
-                </p>
-            </div>
-            <button className="cta-button">Solicitar Orçamento</button>
+          <div className="cta-text">
+            <h2>Pronto para tirar sua ideia do papel?</h2>
+            <p>
+              Nossa equipe está pronta para desenvolver a solução perfeita para o seu negócio.
+            </p>
+          </div>
+          <button className="cta-button">Solicitar Orçamento</button>
         </div>
         </section>
     </>

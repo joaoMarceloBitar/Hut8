@@ -1,0 +1,56 @@
+.section {
+    padding: 5rem 105px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    width: 100%;
+}
+
+.cardColLeftTop {
+    flex: 1127.33;
+}
+
+.cardColRightTop {
+    flex: 546.67;
+}
+
+.cardColLeftBottom {
+    flex: 694;
+}
+
+.cardColRightBottom {
+    flex: 984;
+}
+
+/* Ensure responsiveness for smaller screens */
+@media (max-width: 1024px) {
+    .section {
+        padding: 4rem 5%;
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+    
+    .cardColLeftTop,
+    .cardColRightTop,
+    .cardColLeftBottom,
+    .cardColRightBottom {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+}
