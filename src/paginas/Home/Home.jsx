@@ -163,46 +163,6 @@ function Home() {
             <button className="cta-button">Solicitar Orçamento</button>
         </div>
         </section>
-
-        <footer className="footer">
-  <div className="footer-container">
-
-    <div className="footer-brand">
-      <h3>Hut8</h3>
-      <p>
-        Empresa Júnior de Computação da UFPel. Inovação e tecnologia ao alcance do seu negócio.
-      </p>
-    </div>
-
-    <div className="footer-links">
-      <h4>Links Rápidos</h4>
-      <p>Home</p>
-      <p>Sobre Nós</p>
-      <p>Projetos</p>
-      <p>Equipe</p>
-    </div>
-
-    <div className="footer-links">
-      <h4>Serviços</h4>
-      <p>Desenvolvimento Web</p>
-      <p>Aplicativos Mobile</p>
-      <p>Consultoria em TI</p>
-      <p>Sistemas Personalizados</p>
-    </div>
-
-    <div className="footer-links">
-      <h4>Contato</h4>
-      <p>Pelotas - RS</p>
-      <p>hut8@inf.ufpel.edu.br</p>
-      <p>(53) 99999-9999</p>
-    </div>
-
-  </div>
-
-  <div className="footer-bottom">
-    <p>© 2025 Hut8. Todos os direitos reservados.</p>
-  </div>
-</footer>
     </>
   );
 }
