@@ -1,25 +1,26 @@
 import styles from './Equipe.module.css'
-import CardProfessor from '../../components/layout/CardProfessores/'
+import CardProfessores from '../../components/layout/CardProfessores/CardProfessores'
 import professores from './professoresData'
 
 function Equipe() {
 
     return (
         <main>
-            <section>
-                <hero className={styles.container}>
+            <section className={styles.hero}>
+                <div className={styles.bolaBlur}></div>
+                <div className={styles.container}>
                     <div className={styles.texto}>
                         <div className={styles.tag}>
                             <div className={styles.bola}></div>
                             <p>A empresa júnior da computação</p>
                         </div>
-                        <h1>
-                            Conheça nossa Equipe
+                        <h1 className={styles.heroTitulo}>
+                            Conheça nossa <span>Equipe</span>
                         </h1>
-                        <p>Nosso time de jovens universitários apaixonados por tecnologia, empreendedorismo e inovação</p>
+                        <p className={styles.heroSubTitulo}>Nosso time de jovens universitários apaixonados por tecnologia, empreendedorismo e inovação</p>
                     </div>
                     <img src="foto1-equipe.svg" alt="" className={styles.imagem_1} />
-                </hero>
+                </div>
             </section>
             <section className={styles.professoresSection}>
                 <div className={styles.professores}>
@@ -29,8 +30,16 @@ function Equipe() {
                         </h2>
                         <div className={styles.linha}></div>
                     </div>
-                    <div className={styles.professoresContainerConteudo}>
-                        {/*lista de professores, vou fazer os cards antes*/}
+                    <div className={styles.professores_grid}>
+                        {professores.map((professores) => (
+                            <CardProfessores
+                                key={professores.id}
+                                nome={professores.nome}
+                                cargo={professores.cargo}
+                                descricao={professores.descricao}
+                                imagem={professores.imagem}
+                            />
+                        ))}
                     </div>
                 </div>
             </section>

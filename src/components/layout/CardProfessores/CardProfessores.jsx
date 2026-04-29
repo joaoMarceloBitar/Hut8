@@ -1,23 +1,25 @@
-import styles from "./CardProfessor.modules.css"
+import styles from "./CardProfessores.module.css"
 
-function CardProfessor(nome,cargo,descricao,foto){
+function CardProfessores({nome,cargo,descricao,imagem}){
 
     return(
-        <main className={styles.container}>
+        <div className={styles.container}>
             <div className={styles.conteudo}>
-                <img src={foto} alt="foto do professor" />
+                <img className={styles.foto} src={imagem} alt="foto do professor" />
                 <div className={styles.desc}>
-                    <h3>{nome}</h3>
-                    <p>{cargo}</p>
-                    <p>{descricao}</p>
+                    <div className={styles.nomeCargo}>
+                        <h3 className={styles.nome}>{nome}</h3>
+                        <p className={styles.cargo}>{cargo}</p>
+                    </div>
+                    <p className={styles.descricao}>{descricao}</p>
                     <div className={styles.icons}> 
                         <img src="" alt="" />
                         <img src="" alt="" />
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
 )
 }
 
-export default CardProfessor
+export default CardProfessores
