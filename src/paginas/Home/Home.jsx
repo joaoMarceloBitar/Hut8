@@ -162,7 +162,7 @@ function Home() {
           </div>
           <button className="cta-button">Solicitar Orçamento</button>
         </div>
-      </section>
+        </section>
     </>
   );
 }
