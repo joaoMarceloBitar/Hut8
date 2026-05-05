@@ -1,6 +1,8 @@
 import styles from './Equipe.module.css'
 import CardProfessores from '../../components/layout/CardProfessores/CardProfessores'
 import professores from './professoresData'
+import CardAlunos from '../../components/layout/CardAlunos/CardAlunos'
+import alunos from './alunosData'
 
 function Equipe() {
 
@@ -19,7 +21,10 @@ function Equipe() {
                         </h1>
                         <p className={styles.heroSubTitulo}>Nosso time de jovens universitários apaixonados por tecnologia, empreendedorismo e inovação</p>
                     </div>
-                    <img src="foto1-equipe.svg" alt="" className={styles.imagem_1} />
+                    <div className={styles.imagensWrapper}>
+                        <img src="foto1-equipe.svg" alt="" className={styles.imagem_1} />
+                        <img src="equipe-codigo.svg" alt="" className={styles.imagem_codigo}/>
+                    </div>
                 </div>
             </section>
             <section className={styles.professoresSection}>
@@ -49,10 +54,20 @@ function Equipe() {
                         <h2 className={styles.professoresTitulo}>
                             Desenvolvedores & Designers
                         </h2>
-                        <p>a força criativa por trás de cada linha de código</p>
+                        <p className={styles.devSubtitulo}>a força criativa por trás de cada linha de código</p>
                     </div>
-                    <div className={styles.devsContainerConteudo}>
-                        {/*lista de devs e designers, vou fazer os cards antes*/}
+                    <div className={styles.alunosGridContainer}>
+                        <div className={styles.alunosGrid}>
+                            {alunos.map((alunos) => (
+                                <CardAlunos
+                                    key={alunos.Id}
+                                    nome={alunos.nome}
+                                    area={alunos.area}
+                                    ocupacao={alunos.ocupacao}
+                                    imagem={alunos.imagem}
+                                />
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>

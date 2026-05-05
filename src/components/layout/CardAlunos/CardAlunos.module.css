@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 284px;
+    height: 429px;
+    border-radius: 12px;
+    border-width: 1px;
+    column-span: 1;
+    background-color: #fff;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.imagemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto {
+    width: 234px;
+    border-radius: 24px;
+}
+
+.nomeOcup {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2px;
+}
+
+.nome {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 28px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #323239;
+
+}
+
+.ocupacao {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 20px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #5F5E67;
+}
+
+.icones {
+    width: 234;
+    height: 49;
+    top: 355px;
+    left: 25px;
+    angle: 0 deg;
+    opacity: 1;
+    padding-top: 16px;
+    gap: 12px;
+    border-top: solid;
+    border-top-width: 1px;
+    border-color: #B2B1BA1A;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.ancora {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    border-radius: 9999px;
+    opacity: 1;
+    background-color: #E9E7F0;
+    align-items: center;
+    justify-content: center;
+}

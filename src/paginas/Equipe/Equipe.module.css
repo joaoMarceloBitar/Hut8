@@ -1,9 +1,12 @@
 main {
     background-color: #F9FAFB;
+    padding-bottom: 20rem;
 }
-.hero{
+
+.hero {
     padding: 2rem 0 4rem 0;
 }
+
 .bolaBlur {
     position: absolute;
     width: 320px;
@@ -21,6 +24,29 @@ main {
     align-items: center;
     justify-content: center;
     padding: 6rem 0;
+    position: relative;
+}
+
+.imagensWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.imagem_codigo {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 500px;
+    z-index: 2;
+}
+
+.imagem_1 {
+    width: 44vw;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
 }
 
 .tag {
@@ -86,7 +112,10 @@ main {
     max-width: 40rem;
     line-height: 32px;
 }
+.professoresSection{
+    margin: 4rem 0 10rem 0;
 
+}
 .professores {
     display: flex;
     flex-direction: column;
@@ -127,5 +156,46 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    padding: 0 5rem;
     gap: 2rem;
+}
+
+.devsSection{
+
+}
+
+.devs{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.devsContainerTitulo {
+    padding: 0 0 0 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.devSubtitulo {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #5F5E67;
+}
+
+.alunosGridContainer {
+    padding: 0 2rem;
+}
+
+.alunosGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 284px);
+    gap: 32px;
+    justify-content: center;
 }
