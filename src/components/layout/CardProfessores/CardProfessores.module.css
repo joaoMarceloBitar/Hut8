@@ -1,0 +1,48 @@
+.container{
+    background-color: #ffffff;
+    box-shadow: 0px 10px 15px -3px rgba(129, 59, 190, 0.05), 0px 4px 6px -4px rgba(129, 59, 190, 0.05);
+    border-radius: 12px;
+    width: 32rem;
+    max-width: 600px;
+    padding: 1.5rem 1rem;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+.nomeCargo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.foto{
+    border-radius: 10px;
+}
+
+.nome{
+    color: var(--color-gray-900);
+    font-size: 1.5rem;
+    font-weight: var(--weight-Bold);
+}
+.cargo{
+    color: #813BBE;
+    font-weight: var(--weight-Medium);
+    font-size: var(--font-size-sm);
+}
+.descricao{
+    color: #5F5E67;
+    font-size: var(--font-size-xm);
+    line-height: 22.75px;
+    font-weight: var(--weight-Regular);
+}
